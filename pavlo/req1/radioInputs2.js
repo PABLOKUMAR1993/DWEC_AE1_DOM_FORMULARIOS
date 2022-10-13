@@ -11,7 +11,7 @@ div.appendChild(divRadio2);
 
 //Creo un título y su contenido.
 let tituloRadio2 = document.createElement("h1");
-let txTituloRadio2 = document.createTextNode("Radio Inputs 2 (con Tabla): ");
+let txTituloRadio2 = document.createTextNode("Radio Inputs 2 (con tabla): ");
 divRadio2.appendChild(tituloRadio2);
 tituloRadio2.appendChild(txTituloRadio2);
 
@@ -40,14 +40,14 @@ let td3 = document.createElement("td");
 let td4 = document.createElement("td");
 
 //Creo los textos que va a contener la tabla.
-let txTh1 = document.createTextNode("TÍTULO 1")
-let txTh2 = document.createTextNode("TÍTULO 2")
-let txTh3 = document.createTextNode("TÍTULO 3")
-let txTh4 = document.createTextNode("TÍTULO 4")
-let tx1 = document.createTextNode(" Opción 1: ");
-let tx2 = document.createTextNode(" Opción 2: ");
-let tx3 = document.createTextNode(" Opción 3: ");
-let tx4 = document.createTextNode(" Opción 4: ");
+let txTh1 = document.createTextNode("TÍTULO 1:")
+let txTh2 = document.createTextNode("TÍTULO 2:")
+let txTh3 = document.createTextNode("TÍTULO 3:")
+let txTh4 = document.createTextNode("TÍTULO 4:")
+let tx1 = document.createTextNode(" Opción 1 ");
+let tx2 = document.createTextNode(" Opción 2 ");
+let tx3 = document.createTextNode(" Opción 3 ");
+let tx4 = document.createTextNode(" Opción 4 ");
 
 //Creo los inputs radio.
 let input1 = document.createElement("input");
@@ -55,10 +55,20 @@ let input2 = document.createElement("input");
 let input3 = document.createElement("input");
 let input4 = document.createElement("input");
 
+/* let input = [];
+for (let i = 0; i < 4; i++) {
+    input[i] = document.createElement("input");
+} */
+
 input1.setAttribute("type", "radio");
 input2.setAttribute("type", "radio");
 input3.setAttribute("type", "radio");
 input4.setAttribute("type", "radio");
+
+/* input[0].setAttribute("type", "radio");
+input[1].setAttribute("type", "radio");
+input[2].setAttribute("type", "radio");
+input[3].setAttribute("type", "radio"); */
 
 //Ahora hago todas las herencias jerarquicas de DOM.
 tabla.appendChild(tr1);
