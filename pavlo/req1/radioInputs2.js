@@ -58,7 +58,7 @@ for (let i=0; i<4; i++) {
 let inputRadio2 = [];
 for (let i=0; i<4; i++) {
     inputRadio2[i] = document.createElement("input");
-    inputRadio2[i].setAttribute("type", "checkbox");
+    inputRadio2[i].setAttribute("type", "radio");
     tdRadio2[i].appendChild(inputRadio2[i]);
     tdRadio2[i].appendChild(txTdRadio2[i]);
 }
