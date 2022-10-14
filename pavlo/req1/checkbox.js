@@ -38,7 +38,7 @@ for (let i=0; i<2; i++) {
     tablaCheck.appendChild(trCheck[i]);
 }
 
-//Creo 4 cabeceras de tabla y las meto en la primera fila.
+//Creo 5 cabeceras de tabla y las meto en la primera fila.
 let thCheck = [];
 for (let i=0; i<4; i++) {
     thCheck[i] = document.createElement("th");
@@ -46,7 +46,7 @@ for (let i=0; i<4; i++) {
     thCheck[i].appendChild(txThCheck[i]);
 }
 
-//Creo 4 bloques de tabla y las meto en la segunda fila.
+//Creo 5 bloques de tabla y las meto en la segunda fila.
 let tdCheck = [];
 for (let i=0; i<4; i++) {
     tdCheck[i] = document.createElement("td");

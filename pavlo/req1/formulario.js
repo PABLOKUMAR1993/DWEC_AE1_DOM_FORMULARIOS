@@ -20,52 +20,39 @@ tituloForm.appendChild(txTituloFormulario);
 
 
 //Creo el formulario.
-let form = document.createElement("form");
+let form1 = document.createElement("form");
+divForm.appendChild(form1);
 
-//Creo las label para el formulario.
-let labelDNI = document.createElement("label");
-let labelNombre = document.createElement("label");
-let labelApellidos = document.createElement("label");
-let labelDireccion = document.createElement("label");
-let labelTelefono = document.createElement("label");
+//Creo las variables.
+let labelForm = [];
+let inputForm = [];
+let txForm1 = ["DNI: ", "Nombre: ", "Apellidos: ", "Dirección: ", "Teléfono: "];
+let txForm2 = [];
+let txInput1 = [
+    "Escribe aquí tu DNI",
+    "Escribe aquí tu Nombre",
+    "Escribe aquí tus Apellidos",
+    "Escribe aquí tu Dirección",
+    "Escribe aquí tu Teléfono" ];
+let txInput2 = [];
 
-//Creo los inputs para el formulario.
-let inputDNI = document.createElement("input");
-let inputNombre = document.createElement("input");
-let inputApellidos = document.createElement("input");
-let inputDireccion = document.createElement("input");
-let inputTelefono = document.createElement("input");
+for (let i=0; i<5; i++) {
 
-//Creo los textos para las labels.
-let txDNI = document.createTextNode("DNI: ");
-let txNombre = document.createTextNode("Nombre: ");
-let txApellidos = document.createTextNode("Apellidos: ");
-let txDireccion = document.createTextNode("Dirección: ");
-let txTelefono = document.createTextNode("Teléfono: ");
+    //Creo las label para el formulario.
+    labelForm[i] = document.createElement("label");
 
-// Creo la jerarquiá DOM para el FORM.
-divForm.appendChild(form);
+    //Creo los inputs para el formulario.
+    inputForm[i] = document.createElement("input");
 
-form.appendChild(labelDNI);
-form.appendChild(labelNombre);
-form.appendChild(labelApellidos);
-form.appendChild(labelDireccion);
-form.appendChild(labelTelefono);
+    //Creo los textos para las labels.
+    txForm2[i] = document.createTextNode(txForm1[i]);
 
-labelDNI.appendChild(txDNI);
-labelNombre.appendChild(txNombre);
-labelApellidos.appendChild(txApellidos);
-labelDireccion.appendChild(txDireccion);
-labelTelefono.appendChild(txTelefono);
+    //Creo los textos de los inputs.
+    inputForm[i].placeholder = txInput1[i];
 
-labelDNI.appendChild(inputDNI);
-labelNombre.appendChild(inputNombre);
-labelApellidos.appendChild(inputApellidos);
-labelDireccion.appendChild(inputDireccion);
-labelTelefono.appendChild(inputTelefono);
-
-inputDNI.value = "Escribe aquí tu DNI";
-inputNombre.value = "Escribe aquí tu Nombre";
-inputApellidos.value = "Escribe aquí tus Apellidos";
-inputDireccion.value = "Escribe aquí tu Dirección";
-inputTelefono.value = "Escribe aquí tu Teléfono";
+    // Creo la jerarquiá DOM para el FORM.
+    form1.appendChild(labelForm[i]);
+    labelForm[i].appendChild(txForm2[i]);
+    labelForm[i].appendChild(inputForm[i]);
+    
+}
