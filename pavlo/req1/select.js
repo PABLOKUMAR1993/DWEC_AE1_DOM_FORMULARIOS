@@ -20,5 +20,29 @@ tituloSelect.appendChild(txTituloSelect);
 
 
 let select = document.createElement("select");
-select.add("opcion1");
+let option = [];
+let txSelect = [];
+
+for (let i=0; i<4; i++) {
+    
+    //Creo 4 options.
+    option[i] = document.createElement("option");
+
+    //Creo un texto para cada option.
+    txSelect[i] = document.createTextNode("Opción " + (i+1));
+
+    //Añado los option al select.
+    select.appendChild(option[i]);
+
+    //Añado a cada option su texto.
+    option[i].appendChild(txSelect[i]);
+
+    //Finalmente le añado un value a cada option (opcional en este caso).
+    option[i].vale = txSelect[i];
+}
+
+//Le añado un titulo al select para que no me regañe el inspector.
+select.title = "select";
+
+//Hago select hijo del div.
 divSelect.appendChild(select);

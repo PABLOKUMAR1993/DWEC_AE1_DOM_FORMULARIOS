@@ -16,6 +16,8 @@ let input = document.getElementsByTagName("input");
 let form = document.getElementsByTagName("form");
 let sectionImgS = document.getElementsByTagName("section");
 let imgS = document.getElementsByTagName("img");
+let h3S = document.getElementsByTagName("h3");
+let textAreaS = document.getElementsByTagName("textarea");
 
 //Aplicación de estilos.
 document.body.style.backgroundColor = bgColor;
@@ -25,6 +27,16 @@ for (let i = 0; i <= td.length; i++) { //uso el td, porque es el array más larg
     if (i < h1.length) {
         h1[i].style.color = colortitulo;
         h1[i].style.fontFamily = "roboto";
+    }
+
+    if (i < h3S.length) {
+        h3S[i].style.color = colorTexto2;
+        h3S[i].style.fontFamily = "roboto";
+    }
+
+    if (i < textAreaS.length) {
+        textAreaS[i].style.width = "400px";
+        textAreaS[i].style.height = "150px";
     }
     
     if (i < label.length) {
