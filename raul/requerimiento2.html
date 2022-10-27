@@ -26,14 +26,45 @@ Al pulsar el botón de procesar el pedido, se mostrará el precio total del pedi
 
 <head>
     <meta charset=”UTF-8″ />
-    <title>Document</title>
+    <title>Requerimiento 2</title>
 </head>
 
 <body>
 
-    <div id="div"></div>
+    <h1>Formulario requerimiento 2</h1>
+    <fieldset>
+        <legend>Formulario de pedido</legend>
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label>Nombre</label>
+            <input type="text" name="nombre" placeholder="Introduce el nombre">
+            <label>Dirección</label>
+            <input type="text" name="direccion" placeholder="Introduce la dirección">
+            <label>Teléfono</label>
+            <input type="tel" name="telefono" placeholder="Introduce el teléfono" maxlength="9">
+            <label class="label1">Email</label>
+            <input type="email" name="email_inventado" placeholder="Correo electrónico">
+        </fieldset>
 
-    
+        <fieldset>
+            <legend>Tamaño de la pizza</legend>
+            <input type="radio" name="dimension" value="p">Prequeña
+            <input type="radio" name="dimension" value="m">Mediana
+            <input type="radio" name="dimension" value="g">Grande
+        </fieldset>
+        <fieldset>
+            <legend>Ingredientes de la pizza</legend>
+            <label class="ingredientes">Ingredientes</label>
+            <input type="checkbox" name="ingrediente_carne" value="carne">Carne
+            <input type="checkbox" name="ingrediente_aceituna" value="aceituna">Aceituna
+            <input type="checkbox" name="ingrediente_pimiento" value="pimiento">Pimiento
+            <input type="checkbox" name="ingrediente_peperoni" value="peperoni">Peperoni
+        </fieldset>
+        <br>
+        <button type="submit" value="Procesar_pedido">Procesar pedido</button>
+
+
+
 </body>
 
 </html>
