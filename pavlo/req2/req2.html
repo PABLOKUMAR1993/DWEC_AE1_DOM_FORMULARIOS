@@ -10,37 +10,49 @@
 </head>
 <body>
     
-    <form action="" method="post">
+    <h2>REQUERIMIENTO 2:</h2>
+
+    <form id="formulario" action="" method="post">
 
         <!--Datos Cliente:-->
-        <h3>Datos del Cliente:</h3>
-        <label class="inp" >Nombre:
-            <input type="text" />
-        </label>
-        <label class="inp" >Dirección:
-            <input type="text" />
-        </label>
-        <label class="inp" >Teléfono:
-            <input type="tel" />
-        </label>
-        <label class="inp" >E-mail:
-            <input type="email" />
-        </label>
+
+        <section id="datosCliente">
+
+            <h3>Datos del Cliente:</h3>
+
+            <label id="nombreLabel" class="inp" >Nombre:
+                <input id="nombre" type="text" placeholder="ej. Félix" value="" />
+            </label>
+            <label id="direccionLabel" class="inp" >Dirección:
+                <input id="direccion" type="text" placeholder="ej. Calle Falsa 123" value="" />
+            </label>
+            <label id="telefonoLabel" class="inp" >Teléfono:
+                <input id="telefono" type="tel" placeholder="ej. 123456789" value="" />
+            </label>
+            <label id="emailLabel" class="inp" >E-mail:
+                <input id="email" type="email" placeholder="ej. hola@gmail.com" value="" />
+            </label>
+
+        </section>
 
         <!--Datos Pizza-->
+
         <h3>Tamaño Pizza:</h3>
+
         <label>Individual:
-            <input type="radio" value="S"/>
+            <input type="radio" name="tamanyo" value="S"/>
         </label>
         <label>Mediana:
-            <input type="radio" value="M"/>
+            <input type="radio" name="tamanyo" value="M"/>
         </label>
         <label>Familiar:
-            <input type="radio" value="L"/>
+            <input type="radio" name="tamanyo" value="L"/>
         </label>
 
         <!--Ingredientes Pizza-->
-        <h3>Ingredientes:</h3>
+
+        <h3>Tipo de Pizza:</h3>
+
         <label>Carbonara:
             <input type="checkbox" value="carbonara" />
         </label>
@@ -60,4 +72,5 @@
     </form>
 
 </body>
+<script type="text/javascript" src="./js/main.js"></script>
 </html>

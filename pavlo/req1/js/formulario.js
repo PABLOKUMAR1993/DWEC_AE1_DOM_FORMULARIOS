@@ -1,3 +1,12 @@
+// TITULO GENERAL:
+
+
+//Creo un título y su contenido.
+let tituloReq1 = document.createElement("h1");
+let txTituloReq1 = document.createTextNode("REQUERIMIENTO 1");
+div.appendChild(tituloReq1);
+tituloReq1.appendChild(txTituloReq1);
+
 // DIV:
 
 
