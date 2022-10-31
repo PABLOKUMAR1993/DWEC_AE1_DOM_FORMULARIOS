@@ -25,6 +25,11 @@ label {
     width: 250px;
 }
 
+#tamanyoPizza, #ingredientesPizza {
+    display: flex;
+    flex-direction: column;
+}
+
 h2, h3 {
     font-family: roboto, sans-serif;
     font-weight: 700;

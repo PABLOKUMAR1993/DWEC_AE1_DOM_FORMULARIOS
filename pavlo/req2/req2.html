@@ -5,21 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <!--Lo uso para una tipografia personalizada-->
     <link rel="stylesheet" href="https://use.typekit.net/flf6tut.css">
-    <title>Document</title>
+    <title>Requerimiento 2</title>
 </head>
 <body>
     
     <h2>REQUERIMIENTO 2:</h2>
 
-    <form id="formulario" action="" method="post">
+    <!--Formulario-->
+
+    <form id="formulario" action="#">
 
         <!--Datos Cliente:-->
 
         <section id="datosCliente">
-
             <h3>Datos del Cliente:</h3>
-
             <label id="nombreLabel" class="inp" >Nombre:
                 <input id="nombre" type="text" placeholder="ej. Félix" value="" />
             </label>
@@ -32,42 +33,48 @@
             <label id="emailLabel" class="inp" >E-mail:
                 <input id="email" type="email" placeholder="ej. hola@gmail.com" value="" />
             </label>
-
         </section>
 
         <!--Datos Pizza-->
 
-        <h3>Tamaño Pizza:</h3>
-
-        <label>Individual:
-            <input type="radio" name="tamanyo" value="S"/>
-        </label>
-        <label>Mediana:
-            <input type="radio" name="tamanyo" value="M"/>
-        </label>
-        <label>Familiar:
-            <input type="radio" name="tamanyo" value="L"/>
-        </label>
+        <section id="tamanyoPizza">
+            <h3>Tamaño Pizza:</h3>
+            <label>Individual:
+                <input type="radio" name="tamanyo" value="S"/>
+            </label>
+            <label>Mediana:
+                <input type="radio" name="tamanyo" value="M"/>
+            </label>
+            <label>Familiar:
+                <input type="radio" name="tamanyo" value="L"/>
+            </label>
+        </section>
 
         <!--Ingredientes Pizza-->
 
-        <h3>Tipo de Pizza:</h3>
-
-        <label>Carbonara:
-            <input type="checkbox" value="carbonara" />
-        </label>
-        <label>Bacon:
-            <input type="checkbox" value="bacon" />
-        </label>
-        <label>Barbacoa:
-            <input type="checkbox" value="barbacoa" />
-        </label>
-        <label>Peperoni:
-            <input type="checkbox" value="peperoni" />
-        </label>
+        <section id="ingredientesPizza">
+            <h3>Ingredientes para la Pizza:</h3>
+            <label>Extra de Queso:
+                <input type="checkbox" value="carbonara" name="ingrediente" />
+            </label>
+            <label>Extra de Carne:
+                <input type="checkbox" value="bacon" name="ingrediente" />
+            </label>
+            <label>Extra de Pescado:
+                <input type="checkbox" value="barbacoa" name="ingrediente" />
+            </label>
+            <label>Extra de Verdura:
+                <input type="checkbox" value="peperoni" name="ingrediente" />
+            </label>
+        </section>
 
         <!--Botón Hacer Pedido-->
-        <input class="butn" type="submit" value="Hacer Pedido" />
+
+        <input id="finalizarPedido" class="butn" type="submit" value="Hacer Pedido" />
+
+        <!--Sección para mostrar el total.-->
+
+        <section id="pedidoTerminado"></section>
 
     </form>
 
