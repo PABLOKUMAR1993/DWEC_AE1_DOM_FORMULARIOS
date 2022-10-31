@@ -181,5 +181,5 @@ function calcularTotal() {
     pedidoTerminado.appendChild(h5);
     pedidoTerminado.appendChild(p2);
     */
-
+    
 }

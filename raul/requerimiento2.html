@@ -32,39 +32,49 @@ Al pulsar el botón de procesar el pedido, se mostrará el precio total del pedi
 <body>
 
     <h1>Formulario requerimiento 2</h1>
-    <fieldset>
-        <legend>Formulario de pedido</legend>
-        <fieldset>
-            <legend>Datos personales</legend>
-            <label>Nombre</label>
-            <input type="text" name="nombre" placeholder="Introduce el nombre">
-            <label>Dirección</label>
-            <input type="text" name="direccion" placeholder="Introduce la dirección">
-            <label>Teléfono</label>
-            <input type="tel" name="telefono" placeholder="Introduce el teléfono" maxlength="9">
-            <label class="label1">Email</label>
-            <input type="email" name="email_inventado" placeholder="Correo electrónico">
-        </fieldset>
+    <form id="formulario" method="post">
 
         <fieldset>
-            <legend>Tamaño de la pizza</legend>
-            <input type="radio" name="dimension" value="p">Prequeña
-            <input type="radio" name="dimension" value="m">Mediana
-            <input type="radio" name="dimension" value="g">Grande
-        </fieldset>
-        <fieldset>
-            <legend>Ingredientes de la pizza</legend>
-            <label class="ingredientes">Ingredientes</label>
-            <input type="checkbox" name="ingrediente_carne" value="carne">Carne
-            <input type="checkbox" name="ingrediente_aceituna" value="aceituna">Aceituna
-            <input type="checkbox" name="ingrediente_pimiento" value="pimiento">Pimiento
-            <input type="checkbox" name="ingrediente_peperoni" value="peperoni">Peperoni
-        </fieldset>
-        <br>
-        <button type="submit" value="Procesar_pedido">Procesar pedido</button>
+            <legend>Formulario de pedido</legend>
+            <fieldset>
+                <legend>Datos personales</legend>
+                <label>Nombre</label>
+                <input type="text" name="nombre" required="required" placeholder="Introduce el nombre">
+                <label>Dirección</label>
+                <input type="text" name="direccion" required="required" placeholder="Introduce la dirección">
+                <label>Teléfono</label>
+                <input type="tel" name="telefono" required="required" placeholder="Introduce el teléfono" maxlength="9">
+                <label class="label1">Email</label>
+                <input type="email" name="email_inventado" required="required" placeholder="Correo electrónico">
+            </fieldset>
 
+            <fieldset>
+                <legend>Tamaño de la pizza</legend>
+                <input type="radio" name="eleccion" value="5" checked >Pequeña
+                <input type="radio" name="eleccion" value="10" >Mediana
+                <input type="radio" name="eleccion" value="15" >Grande
+            </fieldset>
+            <fieldset>
+                <legend>Ingredientes de la pizza</legend>
+                <label class="ingredientes">Ingredientes</label>
+                <input type="checkbox" name="eleccion" value="1">Carne
+                <input type="checkbox" name="eleccion" value="1">Aceituna
+                <input type="checkbox" name="eleccion" value="1">Pimiento
+                <input type="checkbox" name="eleccion" value="1">Peperoni
+            </fieldset>
+            <br>
+            <button type="submit" onclick="validarFormulario()">Procesar pedido</button>
+            <br>
+            <br>
+
+            <!--Sección para mostrar el total.-->
+
+            <div id="pedidoFinalizado"></div>
+        </fieldset>
+    </form>
 
 
 </body>
+<script type="text/javascript" src="./javascript/req2.js"></script>
 
 </html>
