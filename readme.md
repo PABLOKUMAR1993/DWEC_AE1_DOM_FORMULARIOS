@@ -20,18 +20,18 @@ Una vez finalizado los trabajos por separado, mantubimos una reunión final dond
 
 >## Estructura del proyecto.
 
-* req1: Contiente los archivos necesarios para el requerimiento 1
-    * js: Contine los ficheros .js necesarios para generar los elementos necesarios para el requerimiento 2 a través del DOM.
-        * checkbox.js: Se crean los elementos del checkbox a través del DOM
-        * formulario.js: Se crean los elementos del formulario a través del DOM 
-        * imagenes.js: Se crean los elementos del imagenes a través del DOM
-        * radioInputs1.js: Se crean los elementos del radioInputs1 a través del DOM
-        * radioInputs2.js: Se crean los elementos del radioInputs2 a través del DOM
-        * select.js: Se crean los elementos del select a través del DOM
-        * textArea.js: Se crean los elementos del textArea a través del DOM
-* req2: Contiente los archivos necesarios para el requerimiento 2
-* index.html: Es la página de inicio desde donde se puede acceder a los dos requerimientos y al repositorio.
-* style.css: Contiene el estilo global para los documentos html
+* **req1:** Contiente los archivos necesarios para el requerimiento 1
+    * **js:** Contine los ficheros .js necesarios para generar los elementos necesarios para el requerimiento 2 a través del DOM.
+        * **checkbox.js:** Se crean los elementos del checkbox a través del DOM
+        * **formulario.js:** Se crean los elementos del formulario a través del DOM 
+        * **imagenes.js:** Se crean los elementos del imagenes a través del DOM
+        * **radioInputs1.js:** Se crean los elementos del radioInputs1 a través del DOM
+        * **radioInputs2.js:** Se crean los elementos del radioInputs2 a través del DOM
+        * **select.js:** Se crean los elementos del select a través del DOM
+        * **textArea.js:** Se crean los elementos del textArea a través del DOM
+* **req2:** Contiente los archivos necesarios para el requerimiento 2
+* **index.html:** Es la página de inicio desde donde se puede acceder a los dos requerimientos y al repositorio.
+* **style.css:** Contiene el estilo global para los documentos html
 ---
 >## Contenido de index.html 
 
