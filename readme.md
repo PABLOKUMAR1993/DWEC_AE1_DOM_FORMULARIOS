@@ -35,7 +35,7 @@ Una vez finalizado los trabajos por separado, mantubimos una reunión final dond
 ---
 >## Contenido de index.html 
 
-index.html: Es la página de inicio desde donde se puede acceder a los dos requerimientos y al repositorio.<br>
+Es la página de inicio desde donde se puede acceder a los dos requerimientos y al repositorio.<br>
 A continuación, se puede ver la captura <br>
 
 ![Index](./imagenes/index.jpg)
