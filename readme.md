@@ -1,4 +1,4 @@
-## Para mostrar el correcto funcionamiento de la página, se ha decidio alojar la web en un hosting de internet para poder acceder al siguiente dominio: <br><br>[https://ae1dwec.pavlokumargfx.com/](https://ae1dwec.pavlokumargfx.com/)
+## Para mostrar el correcto funcionamiento de la página, se ha decidio alojar la web en un hosting de internet para poder acceder al siguiente dominio: <br><br>[https://ae1dwec.pavlokumargfx.com/](https://ae1dwec.pavlokumargfx.com/)<br><br>
 
 
 >## Actividad AE-1. DOM y Formularios  - Grupo 01 (Pavlo Dudnyk y Raúl Herrera).
