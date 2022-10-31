@@ -10,6 +10,7 @@
 * Contenido de index.html
 * Contenido de req1.html
 * Contenido de req2.html
+* Posibles errores
 ---
 >## Distribución del Trabajo en Equipo.
 
@@ -56,9 +57,28 @@ A continuación, se muestra capturas del proceso realizar el pedido, donde se re
 
 ![Requerimiento 2](./imagenes/HacerPedido.jpg)
 
-En la siguiente captura se puede apreciar el mensaje que recibe el usuario cuando realiza el pedido.
+En la siguiente captura se puede apreciar el mensaje que recibe el usuario cuando realiza el pedido con todos los campos rellenos.
 
 ![Requerimiento 2](./imagenes/pedidoRecibido.jpg)
+
+---
+>## Posibles errores
+Se ha depurado el código para que verifique los campos u opciones vacios. En caso de estar alguno vacío mostrará un mensaje en rojo con las indicaciones correspondientes. A continuación se mostrarán varios ejemplos.
+
+En la siguiente captura se puede apreciar el mensaje que indica cuando falta por rellenar algún campo, marcando en rojo el texto del campo que falta (En este caso E-mail):
+
+![Requerimiento 2](./imagenes/ningunCampoVacio.jpg)
+
+En la siguiente captura se puede apreciar el mensaje que indica cuando no se ha activado ningún checkbox de ingredientes:
+
+![Requerimiento 2](./imagenes/faltaIngredientes.jpg)
+
+Por último, se muestra la siguiente captura donde se puede apreciar los diferentes mensajes que muestran cuando no se rellena ningún campo, no se activa ningún tamaño y ningún ingrediente:
+
+![Requerimiento 2](./imagenes/nadaRelleno.jpg)
+
+
+
 ---
 >## Grupo compuesto por:
 
